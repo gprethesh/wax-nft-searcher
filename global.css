@@ -1,0 +1,13 @@
+:root {
+    /* fonts */
+    --font-kameron: Kameron;
+
+    /* Colors */
+    --color-white: #fff;
+
+    /* Paddings */
+    --padding-md: 25px;
+
+    /* border radiuses */
+    --br-md: 30px;
+}

@@ -1,0 +1,553 @@
+body {
+    line-height: normal;
+}
+
+.worlds-first-nft {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+
+
+.searcher-for-wax,
+body {
+    margin: 0;
+}
+
+.worlds-first-nft-searcher-for {
+    position: relative;
+    display: inline-block;
+}
+
+.frame-section {
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px 0 0;
+    box-sizing: border-box;
+    /* align-items: flex-start; */
+    justify-content: center;
+    text-align: center;
+    font-size: 64px;
+    color: var(--color-white);
+    font-family: var(--font-kameron);
+}
+
+.frame-sectionx {
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px 0 0;
+    box-sizing: border-box;
+    /* align-items: flex-start; */
+    justify-content: center;
+    text-align: center;
+    font-size: 35px;
+    color: var(--color-white);
+    font-family: var(--font-kameron);
+}
+
+
+.frame-input {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    border: 0;
+    background-color: var(--color-white);
+    position: relative;
+    text-align: center;
+    border-radius: var(--br-md);
+    width: 160px;
+    height: 50px;
+    flex-shrink: 0;
+}
+
+.search-div {
+    position: relative;
+    font-size: 24px;
+    font-family: var(--font-kameron);
+    color: var(--color-white);
+    text-align: center;
+    display: inline-block;
+}
+
+.frame-button,
+.frame-div,
+.search-main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.frame-button {
+    cursor: pointer;
+    border: 0;
+    padding: 12px 37px;
+    background-color: transparent;
+    border-radius: 60px;
+    background: linear-gradient(90deg, #fb4466, #632563);
+    box-sizing: border-box;
+    align-items: flex-start;
+}
+
+.frame-div,
+.search-main {
+    align-items: center;
+    gap: 33px;
+}
+
+.search-main {
+    position: relative;
+    background-color: #000;
+    max-width: 100%;
+    flex-direction: column;
+    padding: 161px 171px 95px 210px;
+    box-sizing: border-box;
+    /* gap: 49px; */
+}
+
+@media screen and (max-width: 1200px) {
+
+    .frame-div,
+    .frame-section {
+        flex-direction: row;
+
+    }
+
+    .search-main {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .frame-section {
+        display: flex;
+        align-items: center;
+        padding: 40px;
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+
+    .frame-div {
+        padding-left: 49px;
+        padding-right: 46px;
+        box-sizing: border-box;
+    }
+
+    .frame-div,
+    .search-main {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .frame-section {
+        flex-direction: row;
+        max-width: 100%;
+    }
+
+    .worlds-first-nft-searcher-for {
+        position: relative;
+        right: 20px;
+    }
+
+    .frame-div,
+    .frame-section {
+        display: flex;
+        align-items: center;
+        padding: 40px;
+        box-sizing: border-box;
+    }
+
+    .frame-div,
+    .search-main {
+        flex-direction: column;
+        max-width: 100%;
+    }
+}
+
+.popular-span {
+    color: #fff;
+}
+
+.most-popular-div {
+    display: flex;
+    align-items: flex-start;
+    display: inline-block;
+}
+
+.frame-divx {
+    display: flexbox;
+    position: relative;
+    right: 500px;
+    height: 76px;
+    text-align: center;
+    font-size: 64px;
+    color: #fb4466;
+    font-family: var(--font-kameron);
+}
+
+
+@media screen and (max-width: 1300px) {
+
+    .most-popular-div {
+        display: flex;
+        align-items: flex-start;
+        display: inline-block;
+        padding-left: 200px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .frame-divx {
+        display: flexbox;
+        position: relative;
+        right: 300px;
+        height: 76px;
+        text-align: center;
+        font-size: 64px;
+        color: #fb4466;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .frame-divx {
+        display: flexbox;
+        position: relative;
+        right: 200px;
+        height: 76px;
+        text-align: center;
+        font-size: 64px;
+        color: #fb4466;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .frame-divx {
+        display: flexbox;
+        position: relative;
+        right: 200px;
+        text-align: center;
+        font-size: 64px;
+        color: #fb4466;
+    }
+
+
+}
+
+
+@media screen and (max-width: 428px) {
+    .frame-divx {
+        display: flexbox;
+        position: relative;
+        right: 100px;
+        text-align: center;
+        font-size: 64px;
+        color: #fb4466;
+    }
+}
+
+
+
+
+
+.anonymous-mode-nft-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 296px;
+    object-fit: cover;
+}
+
+.name-h3,
+.p {
+    margin: 0;
+    position: absolute;
+    display: inline-block;
+}
+
+.name-h3 {
+    top: 0;
+    left: 49px;
+    font-size: inherit;
+    font-weight: 700;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+.p {
+    top: 43px;
+    left: 42px;
+    font-size: 15px;
+}
+
+.image-nft-div,
+.text-div {
+    position: absolute;
+    top: 296px;
+    left: 0;
+    width: 174px;
+    height: 69px;
+}
+
+.image-nft-div {
+    top: 10px;
+    left: 36px;
+    width: 200px;
+    height: 365px;
+}
+
+.nft-frame-div {
+    position: relative;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 20px;
+    background: linear-gradient(180deg, #302929, rgba(46, 41, 42, 0.83));
+    border: 1px solid #817676;
+    box-sizing: border-box;
+    width: 270px;
+    height: 381px;
+    text-align: center;
+    font-size: 32px;
+    color: var(--color-white);
+    font-family: var(--font-kameron);
+}
+
+@media screen and (max-width: 1200px) {
+    .nft-frame-div {
+        flex-direction: column;
+    }
+}
+
+
+.mainx {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #000;
+    max-width: 100%;
+}
+
+/* HHHHHH */
+
+
+
+.prev-div {
+    position: relative;
+    font-size: 24px;
+    font-family: Kameron;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+}
+
+.next-button,
+.prev-button {
+    cursor: pointer;
+    border: 0;
+    padding: 12px 49px;
+    background-color: transparent;
+    border-radius: 60px;
+    background: linear-gradient(90deg, #fb4466, #632563);
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+}
+
+.next-button {
+    padding: 12px 48px;
+}
+
+.pagination-footer,
+.whole-frame-div {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: flex-start;
+}
+
+.pagination-footer {
+    align-items: center;
+    flex-direction: row;
+    padding: 20px 67px 30px;
+    align-items: center;
+    gap: 62px;
+    padding-left: 537px;
+    /* padding-bottom: 100%; */
+}
+
+.whole-frame-div {
+    position: relative;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    /* flex-direction: column; */
+    /* padding: 240px 505px 240px 445px; */
+    max-height: fit-content;
+    align-items: flex-start;
+    padding: 2rem;
+    height: 25vh;
+}
+
+.whole-frame-divp {
+    position: relative;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    /* flex-direction: column; */
+    /* padding: 240px 505px 240px 445px; */
+    max-height: fit-content;
+    align-items: flex-start;
+    padding: 2rem;
+    height: 25vh;
+}
+
+.whole-frame-divx {
+    /* position: relative; */
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    /* flex-direction: column; */
+    /* padding: 240px 505px 240px 445px; */
+    /* max-height: fit-content;
+    align-items: center; */
+    padding: 2rem;
+    height: 25vh;
+}
+
+@media screen and (max-width: 1200px) {
+    .pagination-footer {
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding-left: 73px;
+    }
+
+    .whole-frame-div {
+        display: flex;
+        flex-direction: column;
+        padding-left: 290px;
+        padding-right: 290px;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .next-button,
+    .prev-button {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .pagination-footer {
+        flex-direction: row;
+        padding: 0 90px 0 0;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+        padding-left: 150px;
+    }
+
+    .whole-frame-div {
+        padding: 64px 0 64px 64px;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .pagination-footer {
+        flex-direction: row;
+        padding-right: 60px;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+        padding-left: 55px;
+    }
+}
+
+
+@media screen and (max-width: 428px) {
+    .next-button {
+        padding-left: 48px;
+        padding-bottom: 12px;
+        box-sizing: border-box;
+    }
+
+    .pagination-footer {
+        flex-direction: row;
+        padding-right: 107px;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .pagination-footer {
+        flex-direction: row;
+        padding-right: 60px;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+        padding-left: 55px;
+    }
+}
+
+
+
+.page-12000-h4 {
+    margin: 0;
+    position: relative;
+    font-size: inherit;
+    font-weight: 400;
+    font-family: inherit;
+    /* display: inline-block; */
+}
+
+.frame-divo {
+    position: relative;
+    width: 100%;
+    height: 43px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 36px;
+    color: #ca2323;
+    font-family: Kameron;
+}
+
+@media screen and (max-width: 1200px) {
+    .page-12000-h4 {
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .page-12000-h4 {
+        justify-content: center;
+        text-align: center;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .page-12000-h4 {
+        justify-content: center;
+        text-align: center;
+        margin: -31px;
+        padding-right: 41px;
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .page-12000-h4 {
+        justify-content: center;
+        text-align: center;
+
+    }
+}
