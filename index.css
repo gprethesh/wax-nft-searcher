@@ -88,6 +88,20 @@ body {
     align-items: flex-start;
 }
 
+.frame-buttonx {
+    cursor: pointer;
+    color: rgb(233, 212, 212);
+    border: 0;
+    padding: 12px 37px;
+    background-color: transparent;
+    border-radius: 60px;
+    background: linear-gradient(90deg, #686565, #686565);
+    box-sizing: border-box;
+    align-items: flex-start;
+}
+
+
+
 .frame-div,
 .search-main {
     align-items: center;
