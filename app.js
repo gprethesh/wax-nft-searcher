@@ -244,7 +244,7 @@ let buttonz = document.querySelector("#search")
 let walletid = document.querySelector("#walletid")
 let collectionid = document.querySelector("#collection")
 let trackz = document.querySelector(".loadingfun")
-
+let framedivxxx = document.querySelector(".frame-div")
 
 
 
@@ -252,6 +252,7 @@ let trackz = document.querySelector(".loadingfun")
 
 // BUTTON WITH INPUT AND SPLICE INTO ARRAY
 const pushUsername =  () => {
+    framedivxxx.innerHTML = "";
     trackz.innerHTML = "";
     trackz.innerHTML += `<div class="frame-button search-div" id="search"><div class="spinner-border text-light" role="status">
     <span class="visually-hidden">Loading...</span></div>
@@ -286,7 +287,7 @@ const stateHandle = () => {
 // EVENTLISTENERS FOR INPUT AREA AND BUTTON
 walletid.addEventListener("change", stateHandle);
 collectionid.addEventListener("change", stateHandle);
-buttonz.addEventListener("pointerenter",stateHandle)
+buttonz.addEventListener("pointerover",stateHandle)
 
 
 
