@@ -235,18 +235,6 @@ const runfun = () => {
 }
 
 
-// FUNCTION TO VALIDATE IF INPUT EMPTY OR NOT
-let validate = () => {
-    if (document.getElementById("collection").value == "") {
-        alert("Collection Name cannot be Empty");
-        location.reload();
-    }
-    if (document.getElementById("walletid").value == "") {
-        alert("WaxWallet Name cannot be Empty");
-        location.reload();
-    }
-}
-
 
 // QUERYSELECTORS
 let buttonz = document.querySelector("#search")
@@ -262,11 +250,11 @@ const pushUsername = () => {
     <span class="visually-hidden">Loading...</span></div>`
     wholeFrameDiv.innerText = "";
     pagenum.innerHTML = "";
+    buttonz.setAttribute("disabled", "true")
     userName.splice(0, 1, walletid.value);
     // walletid.value = "" // IF YOU WANT TO REMOVE INPUT VALUE AFTER EXECUTING
     collectionName.splice(0, 1, collectionid.value);
     runfun()
-    buttonz.setAttribute("disabled", "true")
 }
 
 // FUNCTION TO CHECK AND HANDLE STATES IF INPUT IS BLANK
