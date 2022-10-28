@@ -237,6 +237,8 @@ const runfun = () => {
 
 
 
+
+
 // QUERYSELECTORS
 let buttonz = document.querySelector("#search")
 let walletid = document.querySelector("#walletid")
@@ -245,12 +247,15 @@ let trackz = document.querySelector(".frame-divox")
 
 
 
+
+
+
 // BUTTON WITH INPUT AND SPLICE INTO ARRAY
-const pushUsername = () => {
+const pushUsername =  () => {
     trackz.innerHTML = "";
-    buttonz.innerHTML = "";
-    buttonz.innerHTML += `<div class="spinner-border text-light" role="status">
-    <span class="visually-hidden">Loading...</span></div>`
+    trackz.innerHTML += `<div class="frame-button search-div" id="search"><div class="spinner-border text-light" role="status">
+    <span class="visually-hidden">Loading...</span></div>
+    </div>`
     wholeFrameDiv.innerText = "";
     pagenum.innerHTML = "";
     buttonz.setAttribute("disabled", "true")
@@ -260,13 +265,12 @@ const pushUsername = () => {
     // RUNNING MAIN FUNCTION TO FETCH API DATA
     runfun()
     // RUNNING CHECK FUNCTION ON DOM TO FIND OUT IF TEXT INPUT AREA IS AVALIABLE OR NOT
-    checkfun()
-    
 }
+
 
 // FUNCTION TO CHECK AND HANDLE STATES IF INPUT IS BLANK
 const stateHandle = () => {
-    if (document.querySelector("#walletid").value === "" || document.querySelector("#collection").value === "") {
+    if(document.querySelector("#walletid").value === "" || document.querySelector("#collection").value === "") {
         buttonz.setAttribute("disabled", "true") //button remains disabled
         buttonz.classList.remove("frame-button", "search-div")
         buttonz.classList.add("frame-buttonx", "search-div")
@@ -277,20 +281,14 @@ const stateHandle = () => {
     }
 };
 
+
+
 // EVENTLISTENERS FOR INPUT AREA AND BUTTON
 walletid.addEventListener("change", stateHandle);
 collectionid.addEventListener("change", stateHandle);
-buttonz.addEventListener("pointerover",stateHandle)
+buttonz.addEventListener("pointerenter",stateHandle)
 
 
-// FUNCTION TO CHECK IF INPUT TEXT AREA OF SEARCH IS VISBLE IN DOM OR NOT
-let checkfun = () => {
-    if(document.querySelector("#walletid") && document.querySelector("#collection") ){
-        stateHandle()
-    }
-}
-
-window.addEventListener("load", checkfun)
 
 // EVENT LISTENER TO RUN FUNCTION ON CLICK
 buttonz.addEventListener("click", pushUsername)
@@ -329,3 +327,4 @@ let paginationfun = () => {
     /* CODE END */
 
 }
+
