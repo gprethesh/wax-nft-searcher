@@ -6,6 +6,7 @@ let collectionName = []
 let userName = []
 
 
+
 /* QUERY SELECTORS */
 const mainx = document.querySelector(".mainx")
 const wholeFrameDiv = document.querySelector(".whole-frame-div")
@@ -240,11 +241,13 @@ const runfun = () => {
 let buttonz = document.querySelector("#search")
 let walletid = document.querySelector("#walletid")
 let collectionid = document.querySelector("#collection")
+let trackz = document.querySelector(".frame-divox")
+
 
 
 // BUTTON WITH INPUT AND SPLICE INTO ARRAY
 const pushUsername = () => {
-    buttonz.setAttribute("disabled", "true")
+    trackz.innerHTML = "";
     buttonz.innerHTML = "";
     buttonz.innerHTML += `<div class="spinner-border text-light" role="status">
     <span class="visually-hidden">Loading...</span></div>`
@@ -254,7 +257,11 @@ const pushUsername = () => {
     userName.splice(0, 1, walletid.value);
     // walletid.value = "" // IF YOU WANT TO REMOVE INPUT VALUE AFTER EXECUTING
     collectionName.splice(0, 1, collectionid.value);
+    // RUNNING MAIN FUNCTION TO FETCH API DATA
     runfun()
+    // RUNNING CHECK FUNCTION ON DOM TO FIND OUT IF TEXT INPUT AREA IS AVALIABLE OR NOT
+    checkfun()
+    
 }
 
 // FUNCTION TO CHECK AND HANDLE STATES IF INPUT IS BLANK
@@ -270,17 +277,24 @@ const stateHandle = () => {
     }
 };
 
+// EVENTLISTENERS FOR INPUT AREA AND BUTTON
 walletid.addEventListener("change", stateHandle);
 collectionid.addEventListener("change", stateHandle);
 buttonz.addEventListener("pointerover",stateHandle)
 
 
-stateHandle()
+// FUNCTION TO CHECK IF INPUT TEXT AREA OF SEARCH IS VISBLE IN DOM OR NOT
+let checkfun = () => {
+    if(document.querySelector("#walletid") && document.querySelector("#collection") ){
+        stateHandle()
+    }
+}
 
-
+window.addEventListener("load", checkfun)
 
 // EVENT LISTENER TO RUN FUNCTION ON CLICK
 buttonz.addEventListener("click", pushUsername)
+
 
 
 // FUNCTION FOR SCROLLING UP

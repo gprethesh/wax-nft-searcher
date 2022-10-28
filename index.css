@@ -534,6 +534,17 @@ body {
     font-family: Kameron;
 }
 
+.frame-divox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 33px;
+    row-gap: 33px;
+    column-gap: 33px;
+}
+
+
 @media screen and (max-width: 1200px) {
     .page-12000-h4 {
         justify-content: center;
