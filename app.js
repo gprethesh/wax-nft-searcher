@@ -244,7 +244,7 @@ let collectionid = document.querySelector("#collection")
 
 // BUTTON WITH INPUT AND SPLICE INTO ARRAY
 const pushUsername = () => {
-    
+    buttonz.setAttribute("disabled", "true")
     buttonz.innerHTML = "";
     buttonz.innerHTML += `<div class="spinner-border text-light" role="status">
     <span class="visually-hidden">Loading...</span></div>`
