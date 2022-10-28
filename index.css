@@ -122,6 +122,7 @@ body {
 @media screen and (max-width: 1200px) {
 
     .frame-div,
+    .frame-divo,
     .frame-section {
         flex-direction: row;
 
@@ -141,7 +142,8 @@ body {
         max-width: 100%;
     }
 
-    .frame-div {
+    .frame-div,
+    .frame-divo {
         padding-left: 49px;
         padding-right: 46px;
         box-sizing: border-box;
@@ -165,6 +167,7 @@ body {
     }
 
     .frame-div,
+    .frame-divo,
     .frame-section {
         display: flex;
         align-items: center;
@@ -173,6 +176,7 @@ body {
     }
 
     .frame-div,
+    .frame-divo,
     .search-main {
         flex-direction: column;
         max-width: 100%;

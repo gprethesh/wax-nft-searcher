@@ -243,7 +243,7 @@ const runfun = () => {
 let buttonz = document.querySelector("#search")
 let walletid = document.querySelector("#walletid")
 let collectionid = document.querySelector("#collection")
-let trackz = document.querySelector(".frame-divox")
+let trackz = document.querySelector(".loadingfun")
 
 
 
